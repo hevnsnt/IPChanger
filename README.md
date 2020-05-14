@@ -30,7 +30,7 @@ When you sit back and think about it, IPChanger is pretty needy.  It expects a l
     ```py
     import IPChanger
     oldip, newip = IPChanger.getNewIP()
-    print(f'OldIP: {oldip} | NewIP:{newip})
+    print(f'OldIP: {oldip} | NewIP:{newip}')
     ```
 
 
