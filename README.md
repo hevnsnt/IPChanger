@@ -8,7 +8,7 @@ new ipaddress. Duh
 ## Why use this tool?
 * You want to map out the TOR network (probably a bad idea)
 * You are trying to get around CAPTCHAs (probably a bad idea)
-* 1 word: Girls LOVE TOR HACKERS (IDK what that even means, so great idea)
+* 1 word: Girls LOVE TOR HACKERS (great idea)
 * Because it was acceptable in the 80s (https://www.youtube.com/watch?v=dOV5WXISM24)
 
 ## Installation
