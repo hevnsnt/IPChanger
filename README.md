@@ -13,7 +13,7 @@ IPChanger uses TOR commands to request a new exit node, and will keep working un
 Installation is easy and free:
 
 When you sit back and think about it, IPChanger is pretty needy.  It expects a lot of things to be able to run correctly:
-* Requires Linux Operating System because it needs to interact with TOR client via the control port, and mostly because I have not tested Windows or MacOS yet.  I have tested this on Debian and Kali, and it works great for me. If you need this to work on something else, send me a bitcoin and I will figure it out. 
+* Requires Linux Operating System because it needs to interact with TOR client via the control port, and mostly because I have not tested Windows or MacOS yet.  I have tested this on Debian and Kali, and it works great for me. If you need this to work on something else, I accept bitcoin or pull requests. 
 * pip3 install -r requirements.txt 
 * Requires TOR installed & working, and configured to allow ControlPort for controller applications
 * Doesnt require ProxyChains to work, but requires ProxyChains to work -- if you know what I mean ;)
