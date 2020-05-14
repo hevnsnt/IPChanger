@@ -93,7 +93,7 @@ def getNewIP():
 				count = count + 1
 				doIPAddressStuff()
 				currentIP = requests.get(IPCheckURL, proxies=proxies, headers=headers, timeout=3).text
-			print(Style.BRIGHT + Fore.BLACK + f'  [+] Obtained new IP Address: {currentIP}' + Style.RESET_ALL)
+			print(Style.BRIGHT + Fore.BLACK + f'\n  [+] Obtained new IP Address: {currentIP}' + Style.RESET_ALL)
 		except KeyboardInterrupt:
 			sys.exit(0)
 		except:
@@ -115,5 +115,5 @@ if __name__ == "__main__":
 	banner()
 	validateEnv() # Make sure we have correct environment
 	oldip, newip = getNewIP()
-	print(f'Old IPaddress: {oldip}  || New Ipaddress: {newip}')
+	print(f'\nOld IPaddress: {oldip}  || New Ipaddress: {newip}')
 	
