@@ -14,13 +14,14 @@ new ipaddress. Duh
 ## Installation
 Installation is easy and free:
 
-IPChanger expects a lot of things to be able to run correctly:
-* Requires Linux Operating System
-* Requires TOR installed and have a configured ControlPort for controller applications
+When you sit back and think about it, IPChanger is pretty needy.  It expects a lot of things to be able to run correctly:
+* Requires Linux Operating System because I need to interact with TOR client, and I have not tested Windows or MacOS yet.  I have tested this on Debian and Kali, and it works great for me. If you need this to work on something else, send me a bitcoin and I will figure it out. 
+* pip3 install -r requirements.txt 
+* Requires TOR installed & working, and be configured ControlPort for controller applications
 * Doesnt require ProxyChains to work, but requires ProxyChains to work -- if you know what I mean ;)
 
 
-# TOR Installation Instructions 
+## TOR Configuration Instructions 
 1. Install Linux TOR Client:
 
     ```sh
@@ -36,7 +37,7 @@ IPChanger expects a lot of things to be able to run correctly:
 3. Edit the /etc/tor/torrc file and uncomment 'ControlPort', CookieAuthenication, and 'HashedControlPassword'. Replace the example hash with the hash you generated above:
 
     ```sh
-    $ sudo nano /etc/torrc
+    $ sudo nano /etc/tor/torrc
     ```
    The file should look similar to this (hash will be different)
     ```sh
