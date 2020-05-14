@@ -1,7 +1,7 @@
 # IPChanger
 
 ## Description
-IPChanger uses TOR commands to request a new exit node, and will keep working until it gets you a new external IP address.  It does this via ControlPort commands, and then uses an external IP lookup site to validate your external IP address. You will then need to use something like proxychains to leverage this new ipaddress. Duh
+IPChanger uses the TOR Controlport to request a new exit node, and will keep working until it gets one.  Essentially, this changes your external IP address each time IPChanger is run.  It does this via ControlPort commands, and then uses an external IP lookup site to validate your external IP address. You will then need to use something like proxychains(https://github.com/haad/proxychains) to leverage this new ipaddress. Duh
 
 ## Why use this tool?
 * You want to map out the TOR network (probably a bad idea)
