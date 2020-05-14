@@ -76,5 +76,7 @@ You should try running it standalone before importing into your code, as it will
 1. Lots of instructions & examples on the internet.. So try there.  This is just a simple example 
 
     ```sh
-    $ python3 IPChanger.py && proxychains bash 
+    $ curl icanhazip.com
+    $ python3 IPChangercurl icanhazip.com.py && proxychains bash 
+    $ curl icanhazip.com
     ```
