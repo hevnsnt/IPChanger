@@ -76,5 +76,5 @@ You should try running it standalone before importing into your code, as it will
 1. Lots of instructions & examples on the internet.. So try there.  This is just a simple example 
 
     ```sh
-    $ python3 IPChanger.py && proxychains nordvpn login 
+    $ python3 IPChanger.py && proxychains bash 
     ```
