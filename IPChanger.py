@@ -57,10 +57,10 @@ def validateEnv():
 		print('  [' + Fore.RED + '!' + Style.RESET_ALL + '] This script requires Linux')
 		sys.exit(0)
 	else:
-		print(f'  [+]  OS Check:' + Fore.GREEN + f' {sys.platform}' + Style.RESET_ALL)
+		print(f'  [' + Fore.GREEN +'+' + Style.RESET_ALL + ']  OS Check:' + Fore.GREEN + f' {sys.platform}' + Style.RESET_ALL)
 	try:
 		doIPAddressStuff()
-		print('  [+] TOR Proxy: ' + Fore.GREEN + 'Responding' + Style.RESET_ALL)
+		print('  [' + Fore.GREEN +'+' + Style.RESET_ALL + '] TOR Proxy: ' + Fore.GREEN + 'Responding' + Style.RESET_ALL)
 	except:
 		sys.exit(0)
 
