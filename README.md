@@ -3,6 +3,8 @@
 ## Description
 IPChanger uses the TOR Controlport to request a new exit node, and will keep working until it gets one.  Essentially, this changes your external IP address each time IPChanger is run.  It does this via ControlPort commands, and then uses an external IP lookup site to validate your external IP address. You will then need to use something like proxychains (https://github.com/haad/proxychains) to leverage this new ipaddress. Duh
 
+![Image ScreenShot](img/screenshot.png)
+
 ## Why use this tool?
 * You want to map out the TOR network (probably a bad idea)
 * You are trying to get around CAPTCHAs (probably a bad idea)
