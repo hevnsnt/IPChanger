@@ -18,6 +18,21 @@ When you sit back and think about it, IPChanger is pretty needy.  It expects a l
 * Requires TOR installed & working, and configured to allow ControlPort for controller applications
 * Doesnt require ProxyChains to work, but requires ProxyChains to work -- if you know what I mean ;)
 
+## Usage Instructions
+1. Works fine for standalone IpChange
+
+    ```sh
+    $ python3 IPChanger.py 
+    ```
+
+2. Or as an import into your existing code
+
+    ```py
+    import IPChanger
+    oldip, newip = IPChanger.getNewIP()
+    print(f'OldIP: {oldip} | NewIP:{newip})
+    ```
+
 
 ## TOR Configuration Instructions 
 1. Install Linux TOR Client:
