@@ -108,4 +108,6 @@ if __name__ == "__main__":
 	signal(SIGINT, handler)
 	banner()
 	validateEnv() # Make sure we have correct environment
+	oldip, newip = getNewIP()
+	print(f'Old IPaddress: {oldip}  || New Ipaddress: {newip}')
 	
