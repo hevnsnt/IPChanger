@@ -1,9 +1,7 @@
 # IPChanger
 
 ## Description
-IPChanger uses TOR commands to request a new exit node, thus getting you a shiny new external IP address.  It does this via 
-the local TOR proxy to get a new ip address via TOR. You will then need to use something like proxychains to leverage this 
-new ipaddress. Duh
+IPChanger uses TOR commands to request a new exit node, and will keep working until it gets you a new external IP address.  It does this via ControlPort commands, and then uses an external IP lookup site to validate your external IP address. You will then need to use something like proxychains to leverage this new ipaddress. Duh
 
 ## Why use this tool?
 * You want to map out the TOR network (probably a bad idea)
@@ -15,9 +13,9 @@ new ipaddress. Duh
 Installation is easy and free:
 
 When you sit back and think about it, IPChanger is pretty needy.  It expects a lot of things to be able to run correctly:
-* Requires Linux Operating System because I need to interact with TOR client, and I have not tested Windows or MacOS yet.  I have tested this on Debian and Kali, and it works great for me. If you need this to work on something else, send me a bitcoin and I will figure it out. 
+* Requires Linux Operating System because it needs to interact with TOR client via the control port, and mostly because I have not tested Windows or MacOS yet.  I have tested this on Debian and Kali, and it works great for me. If you need this to work on something else, send me a bitcoin and I will figure it out. 
 * pip3 install -r requirements.txt 
-* Requires TOR installed & working, and be configured ControlPort for controller applications
+* Requires TOR installed & working, and configured to allow ControlPort for controller applications
 * Doesnt require ProxyChains to work, but requires ProxyChains to work -- if you know what I mean ;)
 
 
