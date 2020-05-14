@@ -5,7 +5,7 @@ IPChanger uses TOR commands to request a new exit node, thus getting you a shiny
 the local TOR proxy to get a new ip address via TOR. You will then need to use something like proxychains to leverage this 
 new ipaddress. Duh
 
-##Why use this tool?
+## Why use this tool?
 * You want to map out the TOR network (probably a bad idea)
 * You are trying to get around CAPTCHAs (probably a bad idea)
 * 1 word: Girls LOVE TOR HACKERS (IDK what that even means, so great idea)
