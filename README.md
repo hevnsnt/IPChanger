@@ -19,7 +19,7 @@ When you sit back and think about it, IPChanger is pretty needy.  It expects a l
 * Doesnt require ProxyChains to work, but requires ProxyChains to work -- if you know what I mean ;)
 
 ## Usage Instructions
-1. Works fine for standalone IpChange
+1. Works fine for standalone use
 
     ```sh
     $ python3 IPChanger.py 
