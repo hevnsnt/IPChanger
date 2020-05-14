@@ -104,7 +104,7 @@ def getNewIP():
 			sleep(3)
 			continue #quality code right here
 		break
-	return oldIPaddy, currentIP
+	return oldIPaddy.strip(), currentIP.strip()
 
 def handler(signal_received, frame):
     # Catches CTRL-C  // Handle any cleanup here
@@ -118,6 +118,6 @@ if __name__ == "__main__":
 	banner()
 	validateEnv() # Make sure we have correct environment
 	oldip, newip = getNewIP()
-	print(f'\nOld IPaddress: {oldip.strip()}')
+	print(f'\nOld IPaddress: {oldip}')
 	print(f'New Ipaddress: {newip}')
 	
