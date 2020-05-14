@@ -15,11 +15,12 @@ Installation is easy and free:
 When you sit back and think about it, IPChanger is pretty needy.  It expects a lot of things to be able to run correctly:
 * Requires Linux Operating System because it needs to interact with TOR client via the control port, and mostly because I have not tested Windows or MacOS yet.  I have tested this on Debian and Kali, and it works great for me. If you need this to work on something else, I accept bitcoin or pull requests. 
 * pip3 install -r requirements.txt 
-* Requires TOR installed & working, and configured to allow ControlPort for controller applications
+* Requires TOR installed & working, and configured to allow ControlPort for controller applications. See TOR Configuration below to get this working
 * Doesnt require ProxyChains to work, but requires ProxyChains to work -- if you know what I mean ;)
 
 ## Usage Instructions
-1. Works fine for standalone IpChange
+You should try running it standalone before importing into your code, as it will check to make sure everything works as expected & operating environment is sane.
+1. Works fine for standalone use
 
     ```sh
     $ python3 IPChanger.py 
@@ -69,3 +70,9 @@ When you sit back and think about it, IPChanger is pretty needy.  It expects a l
     $ sudo service tor restart
     ```
 
+## Proxychains usage
+1. Lots of instructions & examples on the internet.. So try there.  This is just a simple example 
+
+    ```sh
+    $ python3 IPChanger.py && proxychains nordvpn login 
+    ```
