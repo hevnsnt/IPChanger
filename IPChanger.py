@@ -22,7 +22,7 @@ proxies = {
     'http': 'socks5://127.0.0.1:9050',
     'https': 'socks5://127.0.0.1:9050'
 } # This is for the local TOR proxy
-IPCheckURL = 'https://ifconfig.co' # URL to determine IP address
+IPCheckURL = 'icanhazip.com' # URL to determine IP address
 headers = { 'User-Agent': UserAgent().random }
 torpassword = ""
 ###############################################################################
