@@ -89,7 +89,7 @@ def getNewIP():
 			currentIP = requests.get(IPCheckURL, proxies=proxies, headers=headers, timeout=3).text
 			oldIPaddy = currentIP
 			while currentIP == oldIPaddy:
-				print('[' + Fore.GREEN +'+' + Style.RESET_ALL + f'] [Getting new IP: {count}]')
+				print('\r  [' + Fore.GREEN +'+' + Style.RESET_ALL + f'] [Getting new IP: {count}]', end ='')
 				count = count + 1
 				doIPAddressStuff()
 				currentIP = requests.get(IPCheckURL, proxies=proxies, headers=headers, timeout=3).text
