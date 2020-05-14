@@ -1,20 +1,23 @@
 # IPChanger.py
 # https://github.com/hevnsnt/IPChanger
 # Released under GPL 3.0
+#
+# Usage: python3 IPChanger.py
+#
+# Or 
+# import IPChanger
+# oldip, newip = IPChanger.getNewIP()
+#
+# use proxychains to run whatever you are doing
+
 import requests
-import sys, os, socket
+import sys, os
 from time import sleep
 from stem import Signal
 from stem.control import Controller
 from fake_useragent import UserAgent
 from colorama import Fore, Back, Style, init
-from random import randint, shuffle
-from bs4 import BeautifulSoup
 from signal import signal, SIGINT
-import csv
-import subprocess
-import time
-import getopt
 
 
 ###########################Basic Setup########################################
@@ -115,5 +118,6 @@ if __name__ == "__main__":
 	banner()
 	validateEnv() # Make sure we have correct environment
 	oldip, newip = getNewIP()
-	print(f'\nOld IPaddress: {oldip}  || New Ipaddress: {newip}')
+	print(f'\nOld IPaddress: {oldip}')
+	print(f'New Ipaddress: {newip}')
 	
