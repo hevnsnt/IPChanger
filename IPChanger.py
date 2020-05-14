@@ -118,6 +118,6 @@ if __name__ == "__main__":
 	banner()
 	validateEnv() # Make sure we have correct environment
 	oldip, newip = getNewIP()
-	print(f'\nOld IPaddress: {oldip}')
+	print(f'\nOld IPaddress: {oldip.strip()}')
 	print(f'New Ipaddress: {newip}')
 	
