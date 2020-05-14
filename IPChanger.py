@@ -59,7 +59,7 @@ def validateEnv():
 	else:
 		print(f'  [+]  OS Check:' + Fore.GREEN + f' {sys.platform}' + Style.RESET_ALL)
 	try:
-		getNewIP()
+		doIPAddressStuff()
 		print('  [+] TOR Proxy: ' + Fore.GREEN + 'Responding' + Style.RESET_ALL)
 	except:
 		sys.exit(0)
