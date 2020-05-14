@@ -69,3 +69,9 @@ When you sit back and think about it, IPChanger is pretty needy.  It expects a l
     $ sudo service tor restart
     ```
 
+## Proxychains usage
+1. Lots of instructions & examples on the internet.. So try there.  This is just a simple example 
+
+    ```sh
+    $ python3 IPChanger.py && proxychains nordvpn login 
+    ```
