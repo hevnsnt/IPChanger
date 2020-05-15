@@ -82,7 +82,7 @@ def doIPAddressStuff():
 		sys.exit(0)
 
 
-def getNewIP():
+def getNewIP(display=False):
 	# This uses the 'IPCheckURL' to determine what our current IP address is
 	# and then uses the getNewIP() function to get a new one
 	headers = { 'User-Agent': UserAgent().random }
@@ -92,15 +92,15 @@ def getNewIP():
 			currentIP = requests.get(IPCheckURL, proxies=proxies, headers=headers, timeout=3).text
 			oldIPaddy = currentIP
 			while currentIP == oldIPaddy:
-				print('\r  [' + Fore.GREEN +'+' + Style.RESET_ALL + f'] [Getting new IP: {count}]', end ='')
+				if display: print('\r  [' + Fore.GREEN +'+' + Style.RESET_ALL + f'] [Getting new IP: {count}]', end ='')
 				count = count + 1
 				doIPAddressStuff()
 				currentIP = requests.get(IPCheckURL, proxies=proxies, headers=headers, timeout=3).text
-			print(Style.BRIGHT + Fore.BLACK + f'\n  [+] Obtained new IP Address: {currentIP}' + Style.RESET_ALL)
+			if display: print(Style.BRIGHT + Fore.BLACK + f'\n  [+] Obtained new IP Address: {currentIP}' + Style.RESET_ALL)
 		except KeyboardInterrupt:
 			sys.exit(0)
 		except:
-			print('\r  [' + Fore.RED + '!' + Style.RESET_ALL + f'] Connection Error to {IPCheckURL}, retrying', end='')
+			if display: print('\r  [' + Fore.RED + '!' + Style.RESET_ALL + f'] Connection Error to {IPCheckURL}, retrying', end='')
 			sleep(3)
 			continue #quality code right here
 		break
@@ -117,7 +117,7 @@ if __name__ == "__main__":
 	signal(SIGINT, handler)
 	banner()
 	validateEnv() # Make sure we have correct environment
-	oldip, newip = getNewIP()
+	oldip, newip = getNewIP(display=True)
 	print(f'\nOld IPaddress: {oldip}')
 	print(f'New Ipaddress: {newip}')
 	
