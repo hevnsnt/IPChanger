@@ -3,6 +3,8 @@
 ## Description
 IPChanger uses the TOR Controlport to request a new exit node, and will keep working until it gets one.  Essentially, this changes your external IP address each time IPChanger is run.  It does this via ControlPort commands, and then uses an external IP lookup site to validate your external IP address. You will then need to use something like proxychains (https://github.com/haad/proxychains) to leverage this new ipaddress. Duh
 
+To make sure this is absolutely clear, this script will change your TOR Ipaddress only. If you do not route your traffic through TOR, your real external IP will be exposed. Use proxychains (see example below) to route your applications through proxychains. 
+
 ![Image ScreenShot](img/screenshot.png)
 
 ## Why use this tool?
@@ -76,5 +78,7 @@ You should try running it standalone before importing into your code, as it will
 1. Lots of instructions & examples on the internet.. So try there.  This is just a simple example 
 
     ```sh
-    $ python3 IPChanger.py && proxychains nordvpn login 
+    $ curl icanhazip.com
+    $ python3 IPChanger.py && proxychains bash 
+    $ curl icanhazip.com
     ```
