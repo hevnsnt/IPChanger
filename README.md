@@ -34,7 +34,7 @@ You should try running it standalone before importing into your code, as it will
 
     ```py
     import IPChanger
-    oldip, newip = IPChanger.getNewIP()
+    oldip, newip = IPChanger.getNewIP(display=True) # if you want output
     print(f'OldIP: {oldip} | NewIP:{newip}')
     ```
 
