@@ -6,7 +6,7 @@
 #
 # Or 
 # import IPChanger
-# oldip, newip = IPChanger.getNewIP()
+# oldip, newip = IPChanger.getNewIP(display=True) # if you want output
 #
 # use proxychains to run whatever you are doing
 
