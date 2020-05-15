@@ -10,7 +10,7 @@ To make sure this is absolutely clear, this script will change your TOR Ipaddres
 ## Why use this tool?
 * You want to map out the TOR network (probably a bad idea)
 * You are trying to get around CAPTCHAs (probably a bad idea)
-* 1 word: Girls LOVE TOR HACKERS (great idea)
+* 1 word: Girls LOVE TOR HACKERS
 * Because it was acceptable in the 80s (https://www.youtube.com/watch?v=dOV5WXISM24)
 
 ## Installation
