@@ -1,4 +1,4 @@
 fake-useragent==1.1.1
-requests==2.23.0
+requests==2.31.0
 stem==1.8.0
 colorama==0.4.3
