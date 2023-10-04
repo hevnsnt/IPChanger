@@ -2,3 +2,4 @@ fake-useragent==1.1.1
 requests==2.23.0
 stem==1.8.0
 colorama==0.4.3
+urllib3>=1.26.17 # not directly required, pinned by Snyk to avoid a vulnerability
